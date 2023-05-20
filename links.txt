@@ -1,0 +1,14 @@
+https://trends.builtwith.com/javascript/jQuery
+https://trends.builtwith.com/javascript/javascript-library/country/Iran
+
+https://learn.shayhowe.com/advanced-html-css/jquery/
+https://css-tricks.com/snippets/jquery/
+http://jqfundamentals.com/chapter/javascript-basics
+
+
+http://goo.gl/eULyPT
+
+
+https://github.com/nefe/You-Dont-Need-jQuery
+
+https://oscarotero.com/jquery/

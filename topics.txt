@@ -1,0 +1,68 @@
+Review
+	AJAX
+		XHR
+		Fetch
+	Async/Sync
+		Callback
+			Callback Hell
+		Promise
+		Async/Await
+	ProtoBuf 
+---------------------------------------------	
+
+Polyfill 
+	vs shim
+
+Transpiling
+	Babeljs
+	webpack
+	Parcel.js
+
+JQuery  
+  Why?
+	cross-browser
+		addEventListner
+		attachEvent
+  What it can do?
+    * DOM
+      + Find 
+      + Traverse
+      + Manipulation
+      + Events
+      + Animations / Effects
+    * AJAX
+      + Global
+    * Utilities   
+	
+	
+  JS Variable Syntax
+  $ ??
+	jQuery
+
+  select, action, action***
+  
+  events
+	handling
+		click
+		on
+		bind  depricated	
+	multiple evnets
+		on('click mousemove' ,cb)    
+	default action
+    sample
+      numeric
+      toupper
+  set/get
+  attr
+	addAttr,  remoceAttr
+  html, text
+  addClass, remoeveClass, toggleClass
+    emulate checkbox & radiobox
+	sample for toggleClass
+	
+  
+  samples
+    suggest				
+    context-menu		$('html, body').contextmenu
+    animation			hover(in, out) / .stop()
+    tooltip

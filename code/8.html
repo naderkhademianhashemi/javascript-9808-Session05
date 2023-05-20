@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+
+<style>
+    .menu{
+        position: fixed;
+        width: 200px;
+        display: none;
+    }
+</style>
+    <ul class="list-group menu">
+        <li class="list-group-item">tehran</li>
+        <li class="list-group-item">karaj</li>
+        <li class="list-group-item">kashan</li>
+        <li class="list-group-item">shiraz</li>
+        <li class="list-group-item">gilan</li>
+        <li class="list-group-item">tabriz</li>
+    </ul>
+            
+    <script>
+        $('body, html').contextmenu(e => {
+              e.preventDefault();
+            $('.menu')
+                .show()
+                // .css('top', e.pageY + 10)
+                // .css('left', e.pageX + 10 )
+                .css({
+                    'top': e.pageY + 10,
+                    'left': e.pageX + 10
+                })
+                ;
+        }).click(e => {
+            $('.menu').hide();
+        })
+    </script>
+</body>
+</html>

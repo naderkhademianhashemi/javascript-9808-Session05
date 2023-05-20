@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="my-elem">Test</h1>
+    <h2>TTTTTTTTTTT</h2>
+    <h2>dfgdfg</h2>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script>        
+        // document.querySelectorAll(".my-elem").addEventListener('click', () => {
+        //     alert('test')
+        // })
+
+
+        // $(".my-elem").on('click', () => {
+        //     alert('test')
+        // })
+
+        // $(".my-elem").click(() => {
+        //     // $('h2').toggle();
+        //     // $('h2').fadeToggle();
+        //     // $('h2').slideToggle();
+
+        //     if($('h2:visible').length >= 1){
+        //        $('h2').hide(); 
+        //     }else{
+        //         $('h2').show(); 
+        //     }
+        // })
+        $("h1, h2").on("click mousemove dbclick",  e => {
+            if(e.type === 'click'){
+                console.log(e)
+            }
+        } )
+    </script>
+</body>
+</html>

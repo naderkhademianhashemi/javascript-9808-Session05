@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://api.jquery.com/html/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>html demo</title>
+  <style>
+  p {
+    margin: 8px;
+    font-size: 20px;
+    color: blue;
+    cursor: pointer;
+  }
+  b {
+    text-decoration: underline;
+  }
+  button {
+    cursor: pointer;
+  }
+  </style>
+  <script src="./jquery-1.10.2.js.download"></script>
+<style>html, body { border:0; margin:0; padding:0; }body { font-family: 'Helvetica', 'Arial',  'Verdana', 'sans-serif'; }</style></head>
+<body style="">
+ 
+<p>
+  <b>Click</b> to change the <span id="tag">html</span>
+</p>
+<p>
+  to a <span id="text">text</span> node.
+</p>
+<p>
+  This <button name="nada">button</button> does nothing.
+</p>
+ 
+<script>window.onload = function() {
+$( "p" ).click(function() {
+  var htmlString = $( this ).html();
+  $( this ).text( htmlString );
+});
+};</script>
+ 
+
+</body></html>

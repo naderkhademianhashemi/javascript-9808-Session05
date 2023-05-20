@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-12">
+                //b4-form-group
+                <div class="form-group">
+                  <label for="">City</label>
+                  <input type="text" name="" id="city" class="form-control" placeholder="" aria-describedby="helpId">
+                  <small id="helpId" class="text-muted">Help text</small>
+                </div>
+
+                //b4-list-default
+                <ul class="list-group">
+                    <li class="list-group-item">tehran</li>
+                    <li class="list-group-item">karaj</li>
+                    <li class="list-group-item">kashan</li>
+                    <li class="list-group-item">shiraz</li>
+                    <li class="list-group-item">gilan</li>
+                    <li class="list-group-item">tabriz</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.list-group-item').hide();
+        $('#city').keyup(e => {
+            let txt = $('#city').val();
+            $('.list-group-item').hide();
+            $(`.list-group-item:contains('${txt}')`).show();
+        })
+    </script>
+</body>
+</html>

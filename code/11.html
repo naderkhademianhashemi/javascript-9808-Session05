@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <style>
+        .tool-tip {
+            background-color: black;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.64);
+            opacity: 0.7;
+            border: 1px solid silver;
+            color: white;
+            display: inline-block;
+            padding: 5px;
+            position: fixed;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-12">
+                <br>
+                <br>
+                <br>
+                <a href="#" my-title="test">Lorem</a> ipsum dolor sit amet consectetur adipisicing elit. Consectetur placeat optio soluta a? Corrupti suscipit, blanditiis eligendi dolorum neque cupiditate aliquid qui mollitia molestiae libero nisi quod iure itaque maiores.
+                Qui mollitia eveniet distinctio omnis amet cum deleniti aliquid? Officia, harum sapiente. Voluptas dolorem, quibusdam itaque eveniet maiores iste velit ipsam, quod, vitae dolore dicta praesentium excepturi. Illum, est neque.
+                Harum deserunt eum maxime veritatis veniam quia natus possimus odit doloribus inventore. Quia fugiat, quod aspernatur deserunt inventore ad incidunt, distinctio aut eius necessitatibus expedita accusamus, rem repudiandae exercitationem et?
+                Iste ullam eveniet, adipisci enim laudantium repudiandae nostrum dicta non rem totam? Officia, modi provident! Velit, officiis alias eum quisquam nesciunt distinctio ipsum quaerat ab, atque voluptates quos nemo ullam!
+                Natus porro nisi explicabo possimus accusantium iusto? Quo a nihil rerum accusantium ipsum fuga nobis pariatur temporibus earum aliquid? Nesciunt accusantium quibusdam error quisquam facere atque, illo explicabo cumque quas!
+                Molestias aliquam dolorum neque est, voluptates tempora iure minima provident, aperiam nihil, pariatur quis! Officiis nostrum similique molestiae, ratione eius quis est aut hic sequi quo, commodi vitae! Dolores, nisi?
+                Officiis vero soluta incidunt in rerum ad dolor sequi molestias neque vel at eligendi similique, ut possimus aliquid! Debitis, deleniti labore. Id quaerat iure labore beatae officiis quo esse facere.
+                Quos blanditiis voluptatum eligendi maiores veniam suscipit officia quam obcaecati distinctio quis dicta minus mollitia deleniti, sunt itaque laboriosam explicabo cumque, pariatur corporis minima. Eius aspernatur doloribus id sed cupiditate!
+                Magni, nihil cum. Nisi repudiandae quo voluptas odio commodi perferendis quia est non eveniet at saepe laudantium harum iure obcaecati accusamus dolores officiis, et inventore laborum voluptatum delectus expedita ratione?
+                <a href="#" my-title="تست">LKKJAKLJL</a> accusamus recusandae, sit nam hic nisi! Obcaecati quod maxime natus harum minima facilis officiis perferendis, eum facere quam impedit magni atque consequatur eos fugiat tempora aspernatur quia? Aliquid, quod.
+            </div>
+        </div>
+    </div>
+
+    <script>
+            $('[my-title]').hover(e=>{
+                let elm = $(e.target);
+                $('<div class="tool-tip"></div>').css({
+                    top: e.pageY,
+                    left: e.pageX
+                })
+                .text(elm.attr('my-title'))
+                .show()
+                .appendTo('body')                
+            }, e=>{
+                $('.tool-tip').remove()
+            })
+    </script>
+</body>
+</html>
